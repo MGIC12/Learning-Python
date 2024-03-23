@@ -34,3 +34,16 @@ if temperature < 18:
         print("I'll only use a coat")
 else:
     print("I don't need an umbrella or a coat")
+
+print("------------------------------------------")
+
+#Using if-elif-else
+rains = False
+print(f"Rains: {rains}")
+temperature = int(input("Temperature: "))
+if temperature < 18 and rains == True:
+    print("I'll use an umbrella and a coat")
+elif temperature < 18 and rains == False:
+    print("I'll only use a coat")
+else:
+    print("I won't use an umbrella or a coat")
