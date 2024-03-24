@@ -19,7 +19,7 @@ print()
 #dato para estimar la edad de la persona. ¿Por qué decimos que solo estamos "estimando" su edad?
 #¿Qué ocurre si eliminamos la conversión a tipo de dato 'int' de la siguiente lí­nea?
 agno = int(input("Para preparar tu perfil, dime en qué año naciste. "))
-edad = 2017-agno-1
+edad = 2024-agno-1
 print()
 
 #Tercera interacción. Solicitamos la estatura, medida en metros.
