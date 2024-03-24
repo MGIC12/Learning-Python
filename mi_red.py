@@ -56,9 +56,19 @@ print("--------------------------------------------------")
 print("Gracias por la información. Esperamos que disfrutes con Mi Red")
 print()
 
-#Finalmente, solicitamos un mensaje de prueba que sirva para publicar un estado del usuario.
-mensaje = input("Ahora vamos a publicar tu primer mensaje. ¿Qué piensas hoy? ")
-print()
-print("--------------------------------------------------")
-print(nombre, "dice:", mensaje)
-print("--------------------------------------------------")
+#Usaremos una variable bool para indiciar si el usuario dewsea continuar
+#utilizando el programa o no
+continuar = True
+
+#Este ciclo se mantiene en ejecucion hasta que el usuario desee salir
+while continuar:
+    escribir_mensaje = str(input("¿Desea escribir un mensaje? (S/N)"))
+    #Vamos a aceptar que el usuario ingrese un mensaje cuando escriban "S", "s", o nada
+    if escribir_mensaje == "S" or escribir_mensaje == "s" or escribir_mensaje == "":
+        mensaje = input("Ahora vamos a publicar tu primer mensaje. ¿Qué piensas hoy? ")
+        print()
+        print("--------------------------------------------------")
+        print(nombre, "dice:", mensaje)
+        print("--------------------------------------------------")
+    elif escribir_mensaje == "N" or escribir_mensaje == "n":
+        continuar = False
