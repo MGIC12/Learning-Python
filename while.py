@@ -1,4 +1,4 @@
-temp = 72
-while temp < 73:
-    print(temp,"   ",int((temp-32)*5/9))
-    temp = temp + 1
+tempf = 72
+while tempf < 73:
+    print(tempf,"   ",int((tempf-32)*5/9))
+    tempf = tempf + 1
